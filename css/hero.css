@@ -87,25 +87,45 @@
 .social-links {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 10px;
   margin-top: 36px;
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-  font-size: 11px;
 }
 
-.social-links a span {
-  margin-left: 3px;
+.social-link {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 9px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
   color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 500;
+  transition: border-color 180ms ease, background-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
-.social-links a:hover,
-.social-links a:hover span {
+.social-link svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background: var(--surface);
   color: var(--text);
 }
 
-.social-separator {
-  color: var(--border);
+.social-arrow {
+  color: var(--text-muted);
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.social-link:hover .social-arrow {
+  transform: translate(2px, -2px);
+  color: var(--accent);
 }
 
 .hero-visual {

@@ -68,11 +68,6 @@
   font-weight: 500;
 }
 
-.contact-form label > span {
-  display: inline;
-  color: var(--text-muted);
-}
-
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
