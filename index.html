@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portafolio de Diego Andrés Betancur Fernández, desarrollador de software en formación en la UTP. Desarrollo web, IA, bases de datos y diseño de interfaces."
+    />
+    <meta name="theme-color" content="#0d1117" />
+    <title>Diego Betancur | Desarrollo de software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" id="top">
+      <nav class="nav-shell container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Diego Betancur, inicio">
+          DB<span>.</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#proyectos">Proyectos</a>
+          <a class="nav-contact" href="#contacto">Contacto <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-grid container">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Disponible para proyectos <span class="eyebrow-divider">·</span> Dosquebradas, Colombia</p>
+            <h1 id="hero-title">Diego Andrés<br /><span>Betancur.</span></h1>
+            <p class="hero-intro">
+              Desarrollador de software en formación. Convierto necesidades reales en experiencias digitales útiles, cuidadas y listas para crecer.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contacto">Hablemos de tu proyecto <span aria-hidden="true">↗</span></a>
+              <a class="button button-text" href="#proyectos">Ver proyectos <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="social-links" aria-label="Enlaces">
+              <a href="https://github.com/KatorSarah" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <span aria-hidden="true" class="social-separator">/</span>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Vista de una solución de software en desarrollo" role="img">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="code-window">
+              <div class="window-bar">
+                <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <span>solucion.py</span>
+                <span class="window-lang">PY</span>
+              </div>
+              <div class="code-lines" aria-hidden="true">
+                <p><span class="line-no">01</span><span class="code-purple">class</span> <span class="code-yellow">Idea</span>:</p>
+                <p><span class="line-no">02</span>  <span class="code-purple">def</span> <span class="code-blue">construir</span>(<span class="code-orange">necesidad</span>):</p>
+                <p><span class="line-no">03</span>    <span class="code-muted"># entender antes de programar</span></p>
+                <p><span class="line-no">04</span>    <span class="code-green">solucion</span> = <span class="code-yellow">disenar</span>(necesidad)</p>
+                <p><span class="line-no">05</span>    <span class="code-purple">return</span> <span class="code-green">solucion.util()</span></p>
+              </div>
+              <div class="window-footer"><span class="terminal-cursor"></span> construyendo con intención</div>
+            </div>
+            <div class="visual-note"><span class="visual-note-mark">+</span><span>Del problema<br />a la solución</span></div>
+            <span class="visual-index">01 / 04</span>
+          </div>
+        </div>
+        <a href="#sobre-mi" class="scroll-cue" aria-label="Desplazarse a Sobre mí"><span></span> Desliza para explorar</a>
+      </section>
+
+      <section class="about section-shell" id="sobre-mi" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-kicker">01 — Perfil</p>
+            <h2 id="about-title">Código con <span>propósito.</span></h2>
+          </div>
+          <div class="about-layout">
+            <div class="about-copy">
+              <p class="about-lead">La tecnología funciona mejor cuando parte de escuchar, entender y resolver.</p>
+              <p>Soy estudiante de Tecnología en Desarrollo de Software en la Universidad Tecnológica de Pereira. Me interesa construir productos digitales que combinen una base técnica sólida con una experiencia sencilla para las personas.</p>
+              <p>Trabajo desde el análisis y el prototipado hasta la implementación: desarrollo web, automatización con inteligencia artificial y modelado de datos. Disfruto aprender en equipo y mejorar cada entrega con criterio.</p>
+              <div class="tech-stack" aria-label="Tecnologías">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>PostgreSQL</span><span>Git</span>
+              </div>
+            </div>
+            <aside class="profile-panel" aria-label="En cifras">
+              <p class="panel-label">En cifras <span>↘</span></p>
+              <div class="stat-row"><strong>06</strong><span>semestres de formación<br />en el programa</span></div>
+              <div class="stat-row"><strong>02</strong><span>proyectos<br />seleccionados</span></div>
+              <div class="stat-row"><strong>04</strong><span>áreas de servicio<br />para tu proyecto</span></div>
+              <p class="institution">Universidad Tecnológica de Pereira <span>·</span> Colombia</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section-shell" id="servicios" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading section-heading-row">
+            <div><p class="section-kicker">02 — Lo que hago</p><h2 id="services-title">Servicios para<br /><span>avanzar mejor.</span></h2></div>
+            <p class="section-aside">Soluciones pensadas para el reto, el equipo y las personas que las van a usar.</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card service-featured">
+              <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" /></svg></span><span class="service-number">01 / 04</span></div>
+              <h3>Desarrollo web</h3>
+              <p>Aplicaciones y sitios responsivos que equilibran claridad visual, rendimiento y una base preparada para evolucionar.</p>
+              <ul><li>Sitios y landing pages</li><li>Interfaces responsivas</li><li>Integración de funcionalidades</li></ul>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card">
+              <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.64 5.64l2.12 2.12m8.48 8.48 2.12 2.12m0-12.72-2.12 2.12m-8.48 8.48-2.12 2.12" /><circle cx="12" cy="12" r="4" /></svg></span><span class="service-number">02 / 04</span></div>
+              <h3>Inteligencia artificial</h3>
+              <p>Flujos inteligentes y asistentes especializados que conectan modelos con información útil para el negocio.</p>
+              <ul><li>Prototipos con LLM</li><li>Automatización de tareas</li><li>Diseño de agentes</li></ul>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card">
+              <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v7c0 1.66 3.58 3 8 3s8-1.34 8-3V5m-16 7v7c0 1.66 3.58 3 8 3s8-1.34 8-3v-7" /></svg></span><span class="service-number">03 / 04</span></div>
+              <h3>Bases de datos</h3>
+              <p>Modelos de datos consistentes para organizar la información y respaldar decisiones confiables.</p>
+              <ul><li>Diseño relacional</li><li>Consultas SQL</li><li>Normalización y relaciones</li></ul>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="service-card">
+              <div class="service-top"><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M8 4v5m4 0v11m4-11v5h5" /></svg></span><span class="service-number">04 / 04</span></div>
+              <h3>Diseño UI/UX</h3>
+              <p>Interfaces intuitivas, con jerarquía visual y recorridos que hacen fácil llegar a lo importante.</p>
+              <ul><li>Wireframes y prototipos</li><li>Diseño de interfaces</li><li>Mejora de experiencia</li></ul>
+              <span class="service-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-shell" id="proyectos" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading section-heading-row">
+            <div><p class="section-kicker">03 — Trabajo seleccionado</p><h2 id="projects-title">Hecho para<br /><span>resolver.</span></h2></div>
+            <p class="section-aside">Proyectos académicos y personales donde las ideas se encuentran con problemas concretos.</p>
+          </div>
+          <div class="project-list">
+            <article class="project-item">
+              <div class="project-meta"><span>01</span><span>IA · PYTHON · MULTI-AGENTE</span></div>
+              <div class="project-main"><h3>GastroMind</h3><p>Sistema multi-agente de inteligencia artificial para optimizar la operación de restaurantes. Agentes especializados en menú, inventario y atención al cliente colaboran a través de un orquestador central.</p><div class="project-tags"><span>Python</span><span>Groq API</span><span>ChromaDB</span><span>SQLite</span><span>Multi-agente</span></div></div>
+              <a class="project-link" href="https://github.com/KatorSarah/GastroMind" target="_blank" rel="noreferrer" aria-label="Ver GastroMind en GitHub">Ver repositorio <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="project-item">
+              <div class="project-meta"><span>02</span><span>WEB · JAVASCRIPT · E-COMMERCE</span></div>
+              <div class="project-main"><h3>E-Commerce</h3><p>Plataforma de comercio electrónico con un flujo de compra completo, gestión de productos y carrito, construida con tecnologías web fundamentales.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+              <a class="project-link" href="https://github.com/KatorSarah/e-commerce" target="_blank" rel="noreferrer" aria-label="Ver E-Commerce en GitHub">Ver repositorio <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contacto" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-heading"><p class="section-kicker">04 — Hablemos</p><h2 id="contact-title">¿Qué te gustaría<br /><span>hacer posible?</span></h2></div>
+          <div class="contact-layout">
+            <div class="contact-info">
+              <p>Cuéntame en qué estás trabajando. Revisemos juntos el reto y encontremos un buen primer paso.</p>
+              <div class="contact-detail"><span class="detail-label">UBICACIÓN</span><span>Dosquebradas, Risaralda<br />Colombia</span></div>
+              <div class="contact-detail"><span class="detail-label">FORMACIÓN</span><span>Universidad Tecnológica de Pereira</span></div>
+              <a class="contact-github" href="https://github.com/KatorSarah" target="_blank" rel="noreferrer">Explorar GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <label for="name">Nombre <span>*</span><input id="name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required /></label>
+                <label for="email">Correo electrónico <span>*</span><input id="email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required /></label>
+              </div>
+              <label for="service">¿En qué puedo ayudarte?<select id="service" name="service" required><option value="" disabled selected>Selecciona un servicio</option><option>Desarrollo web</option><option>Inteligencia artificial</option><option>Bases de datos</option><option>Diseño UI/UX</option><option>Otro</option></select></label>
+              <label for="message">Cuéntame un poco más <span>*</span><textarea id="message" name="message" rows="4" placeholder="¿Qué te gustaría construir?" required></textarea></label>
+              <button class="button button-primary form-submit" type="submit">Preparar mensaje <span aria-hidden="true">↗</span></button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main container">
+        <a class="brand footer-brand" href="#inicio" aria-label="Volver al inicio">DB<span>.</span></a>
+        <p>Diego Andrés Betancur Fernández<br /><span>Desarrollo de Software · UTP · Colombia</span></p>
+        <a class="back-to-top" href="#top">Volver arriba <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="footer-bottom container"><span>© <span id="current-year">2026</span> Diego Betancur</span><span>Diseñado y construido con intención.</span></div>
+    </footer>
+  </body>
+</html>

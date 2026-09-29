@@ -1,0 +1,135 @@
+/* Navegación fija y menú móvil. */
+.site-header {
+  position: fixed;
+  z-index: 10;
+  inset: 0 0 auto;
+  border-bottom: 1px solid transparent;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.site-header.is-scrolled {
+  border-color: rgba(139, 148, 158, 0.14);
+  background: rgba(13, 17, 23, 0.84);
+  backdrop-filter: blur(16px);
+}
+
+.nav-shell {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-family: var(--font-head);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.brand span {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.nav-links > a {
+  color: var(--text-muted);
+  font-size: 12px;
+  transition: color 160ms ease;
+}
+
+.nav-links > a:hover,
+.nav-links > a.is-active {
+  color: var(--accent);
+}
+
+.nav-links > .nav-contact {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+}
+
+.nav-links > .nav-contact:hover,
+.nav-links > .nav-contact.is-active {
+  background: #21ddb0;
+  color: var(--bg);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .nav-shell {
+    min-height: 68px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 16px;
+    height: 1px;
+    background: var(--text);
+    transition: transform 160ms ease;
+  }
+
+  .menu-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+
+  .nav-links {
+    position: fixed;
+    inset: 68px 0 0;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 30px 20px;
+    transform: translateX(100%);
+    background: var(--bg);
+    transition: transform 220ms ease;
+  }
+
+  .nav-links.is-open {
+    transform: translateX(0);
+  }
+
+  .nav-links > a:not(.nav-contact) {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+    font-family: var(--font-head);
+    font-size: 22px;
+  }
+
+  .nav-links > .nav-contact {
+    align-self: flex-start;
+    margin-top: 24px;
+  }
+}

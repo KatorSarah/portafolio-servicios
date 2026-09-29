@@ -1,0 +1,147 @@
+/* Datos de contacto y formulario accesible. */
+.contact {
+  background: #10151c;
+}
+
+.contact-heading {
+  margin-bottom: 47px;
+}
+
+.contact-heading .section-kicker {
+  margin-bottom: 16px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 100px;
+}
+
+.contact-info > p {
+  max-width: 300px;
+  margin: 0 0 35px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.contact-detail {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 21px;
+  color: var(--text);
+  font-size: 12px;
+}
+
+.detail-label {
+  color: var(--text-muted);
+  font-size: 9px;
+}
+
+.contact-github {
+  display: inline-flex;
+  gap: 12px;
+  margin-top: 12px;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.contact-github:hover {
+  color: var(--accent);
+}
+
+.contact-form {
+  display: grid;
+  gap: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: #c2c9d1;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.contact-form label > span {
+  display: inline;
+  color: var(--text-muted);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  min-height: 46px;
+  padding: 11px 13px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 400;
+  outline: none;
+  transition: border-color 160ms ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.contact-form select:invalid {
+  color: #626c77;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+}
+
+.contact-form textarea {
+  min-height: 124px;
+  resize: vertical;
+}
+
+.form-submit {
+  justify-self: start;
+  min-width: 190px;
+  margin-top: 2px;
+  border: 0;
+  cursor: pointer;
+}
+
+.form-status {
+  min-height: 24px;
+  margin: -8px 0 0;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.form-status.is-visible {
+  color: var(--accent);
+}
+
+@media (max-width: 850px) {
+  .contact-layout {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 37px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-heading h2 {
+    font-size: 42px;
+  }
+}
